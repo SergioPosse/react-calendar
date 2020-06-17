@@ -6,7 +6,7 @@ import Calendar from './components/calendar/calendar.js'; //if i name index.js n
 function App() {
   return (
     <div className="App">
-        <Calendar />
+        <Calendar myText="Probando desde app component" />
     </div>
   );
 }

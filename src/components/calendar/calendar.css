@@ -1,0 +1,52 @@
+
+.calendar-container{
+    width: 70vw;
+    height: 60vh;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.top-bar{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    background-color:gray;
+}
+.days-row{
+    flex:1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color:goldenrod;
+
+}
+.days-grid{
+    flex:1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: darkolivegreen;
+    column-gap:2px;
+    row-gap:2px;
+}
+
+.days-grid div{
+    border:1px solid black;
+}
+
+
+
+.top-bar div:nth-child(n){
+    border:1px solid black;
+}
+
+.days-row div:nth-child(n){
+    color: white;
+    margin: 2px;
+}
+
+.month,.year{
+    width:35%;
+    padding:6px;
+}
