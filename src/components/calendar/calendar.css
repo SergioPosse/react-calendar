@@ -1,4 +1,11 @@
 
+.blank{
+    background-color: grey;
+}
+
+.current-day{
+    background-color: navajowhite;
+}
 .calendar-container{
     width: 70vw;
     height: 60vh;
@@ -16,14 +23,16 @@
     background-color:gray;
 }
 .days-row{
-    flex:1 1 auto;
+    flex:1;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     background-color:goldenrod;
+    font-size: 2vw;
+    grid-template-rows:minmax(5vh, 10vh);
 
 }
 .days-grid{
-    flex:1 1 auto;
+    flex:1;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     background-color: darkolivegreen;
